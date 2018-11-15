@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-compass-deployment
+  labels:
+    app: hello-compass
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-compass
+  template:
+    metadata:
+      labels:
+        app: hello-compass
+    spec:
+      containers:
+      - name: hello-compass
+        image: hitzoft/hello-compass:1
+        ports:
+        - containerPort: 8085
