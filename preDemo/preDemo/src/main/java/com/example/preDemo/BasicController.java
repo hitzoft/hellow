@@ -8,6 +8,6 @@ public class BasicController {
 	@GetMapping("/hello")
 	public String helloCompass() {
 		System.out.println("Insied helloCompass method");
-		return "Hello Compass";
+		return "Hello Compass 22";
 	}
 }
