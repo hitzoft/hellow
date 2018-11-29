@@ -10,7 +10,7 @@ public class BasicController {
 	@GetMapping("/hello")
 	public String helloCompass() {
 		System.out.println("helloCompass method");
-		return "This message will be updated";
+		return "This message has been changed by Paul";
 	}
 	
 	
