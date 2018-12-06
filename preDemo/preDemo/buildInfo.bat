@@ -1,4 +1,3 @@
-cd preDemo/preDemo/
 docker build -t hello-compass:%BUILD_NUMBER% .
 docker tag hello-compass:%BUILD_NUMBER% hitzoft/hello-compass:%BUILD_NUMBER%
 docker images
